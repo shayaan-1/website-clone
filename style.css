@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Hero section */
+.hero {
+    background:linear-gradient(285.47deg, #002566 -11.15%, #7308DA -11.14%, #9800FF -8.21%, #161F7C -4.38%, #2E62ED 77.98%, #256BEC 80.23%, #1C74EB 84.75%, #20CAF2 101.67%);
+    padding: 50px 80px;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: white;
+}
+
+.hero-text h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.hero-text p{
+    font-size: 20px;
+}
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Course card section */
+.course-card {
+    margin: 50px auto;
+    max-width: 1300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Adding hover effect */
+.course-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-thumbnail {
+    position: relative;
+    flex: 0 0 40%; /* Adjust the width of the thumbnail */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(203 213 225);
+}
+
+.card-thumbnail img {
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.difficulty, .instructor, .difficulty-instructor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.difficulty-instructor{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#instructor{
+    margin-right: 40px;
+}
+
+.difficulty span, .instructor span, .instructor i{
+    margin: 5px;
+    color: #f95959;
+}
+
+.pre-req{
+    display: flex;
+    align-items: start;
+}
+
+.pre-req span{
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #f95959;
+}
+
+.powered-by {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    color: #ffffffcc;
+    font-weight: bold;
+    padding: 8px 12px;
+    font-size: 28px;
+    /* background-color: rgb(203 213 225) */
+}
+
+.name-of-company{
+    color: rgb(49, 49, 49);
+}
+
+.text-content {
+    padding: 20px;
+    flex: 1; 
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #6d6d6d;
+}
+
+ul, ol {
+    padding-left: 32px; /* Adjust as needed */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.enroll-button{
+    background-color: #f95959;
+    color: #fff;
+    border: none;
+}
+.learnmore-button{
+    background-color: #fff;
+    color: #f95959;
+    border: 1px solid #f95959;
+}
+
+.enroll-button:hover{
+    background-color: #ff2828;
+}
+
+.learnmore-button:hover{
+    background-color: #f2dbdb;
+}
+.below-cards{
+    margin-top: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/*Second hero*/
+.second-hero {
+    background:linear-gradient(316deg, #002566 0%, #161F7C 6.00%, #7308DA 30.00%, #9800FF 40.00%, #2E62ED 78.00%, #256BEC 81.00%, #1C74EB 85.00%, #20CAF2 100%);
+    padding: 50px 80px;
+    width: 1300px;
+}
+
+.second-hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-hero h1{
+    font-size: 40px;
+    line-height: 3rem;
+    margin: 10px 0;
+}
+
+/* Testimonial section */
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    margin-bottom: 10px;
+}
+
+blockquote footer {
+    font-weight: bold;
+}
+
+/* Footer section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.testimonial{
+    margin-top: 50px;
+    max-width: 1300px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial blockquote{
+    width: 80%;
+    font-size: 25px;
+    color: #6d6d6d;
+}
+.testimonial img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.footer{
+    width: 100%;
+    background-color: rgba(69, 91, 102); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo-title{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+#logo-title img{
+    width: 30px;
+    margin-right: 10px;
+}
+#links{
+    margin-top: 30px;
+    font-size: 25px;
+}
+#links a{
+    text-decoration: none;
+    color: #f95959;
+    margin: 0 20px;
+}
+#links a:hover{
+    text-decoration: underline;
+}
+#social-media-icons{
+    margin-top: 30px;
+    font-size: 30px;
+}
+#social-media-icons i{
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 1270px) {
+    .hero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .second-hero{
+        width: 100%;
+    }
+    .hero-content{
+        flex-direction: row ;
+        justify-content: center ;
+        padding: auto;
+    }
+    .hero-text{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-hero{
+        display: flex;
+        justify-content: center;
+    }
+    .second-hero-content{
+        justify-content: center;
+    }
+    .hero-image img {
+        display: none; 
+    }
+    .second-hero img{
+        display: none; 
+    }
+    .difficulty-instructor{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .course-card{
+        width: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero{
+        font-size: auto;
+    }
+    .second-hero{
+        font-size: auto;
+    }
+    .course-card {
+        display: flex; 
+        flex-direction: column;
+    }
+    .powered-by{
+        position: absolute;
+        background-color: transparent;
+        backdrop-filter: blur(80px);
+    }
+    .text-content {
+        padding: 20px;
+    }
+    .card-thumbnail img{
+        margin-top: 0;
+    }
+    .card-content{
+        flex-direction: column;
+    }
+    .below-cards h2{
+        text-align: center;
+    }
+
+}
